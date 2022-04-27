@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.quiz {
+  width: 90%;
+  margin: auto;
+  width: 690px;
+}
+
+.quiz__title {
+  background-color: #14355C;
+  font-size: 50px;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  line-height: 1.1;
+  z-index: 2;
+  font-weight: 800;
+}
+
+.quiz__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 16px;
+}
+
+.quiz__box {
+  width: calc(50% - 16px);
+  flex-basis: 10;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
+  margin: auto auto 16px auto;
+  transition: all 200ms ease-in;
+}
+
+.quiz__box:hover {
+  transform: scale(1.05);
+}
+
+.quiz__media {
+  width: 100%;
+  position: relative;
+}
+
+.quiz__politician-img {
+  width: 100%;
+}
+
+.quiz__result-correct,
+.quiz__result-wrong  {
+  width: 90%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+i {
+  height: 16px;
+  width: 16px;
+  color: blue;
+}
